@@ -22,7 +22,8 @@ But the administrator can still find the deleted "Professor" records in database
 Download the whole repo and use an IDE to open. 
 Generally the IDE will download dependencies automatically.
 Then, create a local database and config the `application.properties` 
-(`~/class-management/src/main/resources/`).
+
+File path: `~/class-management/src/main/resources/`
 
 Config database connection by modifying these lines:
 
