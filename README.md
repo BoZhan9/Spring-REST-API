@@ -27,11 +27,11 @@ File path: `~/class-management/src/main/resources/`
 
 Config database connection by modifying these lines:
 
-*spring.datasource.url* =jdbc:postgresql://localhost:5432/{name_of_database}
+`spring.datasource.url` = *jdbc:postgresql://localhost:5432/{name_of_database}*
 
-*spring.datasource.username* ={username}
+`spring.datasource.username` = *{username}*
 
-*spring.datasource.password* ={password}
+`spring.datasource.password` = *{password}*
 
 ## Schema
 
