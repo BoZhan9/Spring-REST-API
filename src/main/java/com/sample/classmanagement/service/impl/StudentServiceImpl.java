@@ -1,6 +1,6 @@
 package com.sample.classmanagement.service.impl;
 
-import com.sample.classmanagement.entity.StudentEntity;
+import com.sample.classmanagement.model.entity.StudentEntity;
 import com.sample.classmanagement.exception.ResourceNotFoundException;
 import com.sample.classmanagement.repository.StudentRepository;
 import com.sample.classmanagement.service.StudentService;

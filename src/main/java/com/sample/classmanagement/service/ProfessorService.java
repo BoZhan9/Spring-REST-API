@@ -1,6 +1,6 @@
 package com.sample.classmanagement.service;
 
-import com.sample.classmanagement.entity.ProfessorEntity;
+import com.sample.classmanagement.model.entity.ProfessorEntity;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.sample.classmanagement.entity;
+package com.sample.classmanagement.model.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

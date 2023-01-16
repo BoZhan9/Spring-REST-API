@@ -1,6 +1,6 @@
 package com.sample.classmanagement.controller;
 
-import com.sample.classmanagement.entity.StudentEntity;
+import com.sample.classmanagement.model.entity.StudentEntity;
 import com.sample.classmanagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/students")
 public class StudentController {
     private final StudentService studentService;
 
