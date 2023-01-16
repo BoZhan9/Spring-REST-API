@@ -158,7 +158,7 @@ Config database connection by modifying these lines:
 
 **Request body:** none
 
-**Respond:** [ ] (empty)
+**Respond:** student not found with provided id: 1 (Status: 404 Not Found)
 
 ```
 classdb=# select * from student;
@@ -168,11 +168,11 @@ classdb=# select * from student;
 
 ```
 
-**Request url:** localhost:8080/student/1
+**Request url:** localhost:8080/professor/1
 
 **Request body:** none
 
-**Respond:** [ ] (empty)
+**Respond:** professor not found with provided id: 1 (Status: 404 Not Found)
 
 ```
 classdb=# select * from professor;

@@ -1,6 +1,7 @@
 package com.sample.classmanagement.service.impl;
 
 import com.sample.classmanagement.entity.ProfessorEntity;
+import com.sample.classmanagement.exception.ResourceNotFoundException;
 import com.sample.classmanagement.repository.ProfessorRepository;
 import com.sample.classmanagement.service.ProfessorService;
 import org.springframework.stereotype.Service;
@@ -27,8 +28,8 @@ public class ProfessorServiceImpl implements ProfessorService {
     }
 
     @Override
-    public Optional<ProfessorEntity> findProfessorById(Integer id) {
-        return professorRepository.findById(id);
+    public ProfessorEntity findProfessorById(Integer id) {
+        return professorRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("professor not found with provided id: " + id));
     }
 
     @Override

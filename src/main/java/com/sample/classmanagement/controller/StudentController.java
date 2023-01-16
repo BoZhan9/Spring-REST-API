@@ -2,16 +2,17 @@ package com.sample.classmanagement.controller;
 
 import com.sample.classmanagement.entity.StudentEntity;
 import com.sample.classmanagement.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/student")
 public class StudentController {
     private final StudentService studentService;
 
+    @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
@@ -23,9 +24,9 @@ public class StudentController {
     @GetMapping
     public List<StudentEntity> findAllStudents(){
         return studentService.findAllStudents();
-    };
+    }
     @GetMapping("/{id}")
-    public Optional<StudentEntity> findStudentById(@PathVariable("id") Integer id) {
+    public StudentEntity findStudentById(@PathVariable("id") Integer id) {
         return studentService.findStudentById(id);
     }
 

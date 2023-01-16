@@ -1,12 +1,12 @@
 package com.sample.classmanagement.service.impl;
 
 import com.sample.classmanagement.entity.StudentEntity;
+import com.sample.classmanagement.exception.ResourceNotFoundException;
 import com.sample.classmanagement.repository.StudentRepository;
 import com.sample.classmanagement.service.StudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -27,8 +27,8 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Optional<StudentEntity> findStudentById(Integer id) {
-        return studentRepository.findById(id);
+    public StudentEntity findStudentById(Integer id) {
+        return studentRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("student not found with provided id: " + id));
     }
 
     @Override
