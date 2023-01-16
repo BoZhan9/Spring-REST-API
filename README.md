@@ -63,7 +63,7 @@ Config database connection by modifying these lines:
 {
   "name": "Brian",
   "gender": "M",
-  "grade": 95
+  "score": 95
 }
 ```
 **Respond:**
