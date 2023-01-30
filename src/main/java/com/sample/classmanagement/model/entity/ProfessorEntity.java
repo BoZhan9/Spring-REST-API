@@ -1,7 +1,6 @@
 package com.sample.classmanagement.model.entity;
 
-import jakarta.persistence.*;
-import org.hibernate.annotations.SQLDelete;
+import javax.persistence.*;
 import org.hibernate.annotations.Where;
 
 import java.sql.Timestamp;

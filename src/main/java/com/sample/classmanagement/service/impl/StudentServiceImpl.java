@@ -4,14 +4,17 @@ import com.sample.classmanagement.model.entity.StudentEntity;
 import com.sample.classmanagement.exception.ResourceNotFoundException;
 import com.sample.classmanagement.repository.StudentRepository;
 import com.sample.classmanagement.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class StudentServiceImpl implements StudentService {
+
     private final StudentRepository studentRepository;
 
+    @Autowired
     public StudentServiceImpl(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }

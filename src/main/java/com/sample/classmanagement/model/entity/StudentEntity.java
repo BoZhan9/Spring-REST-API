@@ -1,6 +1,6 @@
 package com.sample.classmanagement.model.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -20,12 +20,9 @@ public class StudentEntity {
     @Column(name = "stu_score")
     private Integer score;
     @CreationTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "create_time")
     private Timestamp created;
-
     @UpdateTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "update_time")
     private Timestamp updated;
 
